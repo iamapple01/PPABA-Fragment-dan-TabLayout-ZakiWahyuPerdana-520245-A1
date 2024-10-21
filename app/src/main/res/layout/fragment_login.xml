@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/tv_homepage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homepage"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- TextView for the Welcome Message -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back, Username!"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Placeholder for Memoji Image -->
+    <ImageView
+        android:id="@+id/iv_memoji"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/absolutecinema"
+        android:layout_marginBottom="24dp" />
+
+    <!-- TextView for How are you doing today -->
+    <TextView
+        android:id="@+id/tv_how_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you doing today?"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- LinearLayout for emotion buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Button for negative emotion -->
+        <Button
+            android:id="@+id/btn_negative"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="😞"
+            android:textSize="30sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Button for positive emotion -->
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:text="😊"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
